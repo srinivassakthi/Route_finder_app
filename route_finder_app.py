@@ -12,7 +12,7 @@ basemap = st.selectbox('Select a basemap', ['OpenStreetMap', 'Stamen Terrain', '
 
 address = st.text_input('Enter an address.')
 
-st.secretsORS_API_KEY = '5b3ce3597851110001cf6248c5cf90f9ae064d8dbb2169e325027e5b'
+st.secrets(ORS_API_KEY = '5b3ce3597851110001cf6248c5cf90f9ae064d8dbb2169e325027e5b')
 
 @st.cache_data
 def geocode(query):
